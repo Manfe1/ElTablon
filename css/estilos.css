@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d8d2c9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #bfec84;
+  color: white;
+  padding: 1em 0;
+  border-color: #5fec5f;
+  border-width: 1px;
+  border-style: solid;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #cc9555;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #bfec84;
+  color: #cc9555;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-color: #5fec5f;
+  border-width: 1px;
+  border-style: solid;
+}
+
+h1,
+h2 {
+  color: #cc9555;
+  font-family: "DynaPuff";
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #bfec84;
+  color: #cc9555;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-color: #5fec5f;
+  border-width: 1px;
+  border-style: solid;
+}
+
+button:hover {
+  background-color: #98fb98;
+  border-color: #5fec5f;
+  border-width: 1px;
+  border-style: solid;
+}
+
+button:active {
+  background-color: #7bc77e;
+  border-color: #4caf50;
+}
+
+button:focus {
+  outline: 2px solid #4caf50;
+}
+
+form {
+  background-color: #d2b48c;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+form button {
+  width: auto;
+  margin-top: 10px;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.form-borrar-anuncio {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.form-borrar-anuncio button {
+  background-color: #bfec84;
+  color: #cc9555;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0;
+  border-color: #5fec5f;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.form-borrar-anuncio button:hover {
+  background-color: #98fb98;
+}
+
+.form-borrar-anuncio button:focus {
+  outline: 2px solid #4caf50;
+}
+
+hr.divider {
+  border: 0;
+  height: 4px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+hr.peque {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list img {
+  margin-left: 0;
+}
+
+/* Media Queries para Responsividad */
+
+/* Dispositivos con un ancho máximo de 768px (tabletas y teléfonos) */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    text-align: left;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+
+/* Dispositivos con un ancho máximo de 480px (teléfonos) */
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .nav-list a {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    padding: 0 10px;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
